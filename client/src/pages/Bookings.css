@@ -1,0 +1,59 @@
+.bookings-page { padding-bottom: 60px; }
+
+.bookings-list { display: flex; flex-direction: column; gap: 16px; }
+
+.booking-item {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+
+.booking-item:hover { border-color: var(--accent); }
+
+.booking-vehicle-icon {
+  font-size: 48px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.booking-details { flex: 1; min-width: 0; }
+
+.booking-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.booking-vehicle-name { font-size: 18px; font-weight: 700; }
+
+.booking-vehicle-info {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.booking-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.booking-notes {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.booking-actions { flex-shrink: 0; }
+
+@media (max-width: 600px) {
+  .booking-item { flex-wrap: wrap; }
+  .booking-vehicle-icon { font-size: 36px; }
+}

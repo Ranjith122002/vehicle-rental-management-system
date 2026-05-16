@@ -1,0 +1,162 @@
+.vehicle-detail-page { padding-bottom: 60px; }
+
+.back-link { padding: 20px 0 8px; }
+.back-link a { color: var(--text-secondary); font-size: 14px; transition: color 0.2s; }
+.back-link a:hover { color: var(--accent); }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 24px;
+  align-items: start;
+}
+
+.detail-main { display: flex; flex-direction: column; gap: 24px; }
+
+.detail-image {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--bg-secondary), var(--bg-card));
+}
+
+.detail-emoji { font-size: 120px; }
+
+.detail-info { padding: 28px; }
+
+.detail-type-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.detail-title {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.detail-subtitle { color: var(--text-secondary); font-size: 15px; }
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.spec-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+}
+
+.spec-icon { font-size: 18px; }
+
+.spec-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: block;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.spec-value {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+.spec-item { flex-direction: column; align-items: flex-start; }
+
+.vehicle-specs-text { margin-bottom: 24px; }
+.vehicle-specs-text h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.vehicle-specs-text p { color: var(--text-secondary); font-size: 14px; line-height: 1.7; }
+
+.pricing-section { margin-bottom: 24px; }
+.pricing-section h4 { font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+
+.pricing-grid {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  flex: 1;
+  min-width: 100px;
+  padding: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+}
+
+.pricing-period {
+  display: block;
+  font-size: 12px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.pricing-amount {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.owner-info h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.owner-info p { color: var(--text-secondary); font-size: 14px; }
+
+/* Booking Sidebar */
+.booking-card { padding: 28px; position: sticky; top: 80px; }
+.booking-title { font-size: 20px; font-weight: 800; margin-bottom: 20px; }
+
+.price-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.total-price {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--success);
+}
+
+.booking-success { text-align: center; padding: 20px 0; }
+.success-icon { font-size: 48px; margin-bottom: 12px; }
+.booking-success h3 { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.booking-success p { color: var(--text-secondary); font-size: 14px; line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .detail-grid { grid-template-columns: 1fr; }
+  .booking-card { position: static; }
+}

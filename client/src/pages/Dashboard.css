@@ -1,0 +1,244 @@
+.dashboard-page { padding-bottom: 60px; }
+
+.dash-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.dash-stat {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dash-stat-icon { font-size: 32px; }
+.dash-stat-value { font-family: var(--font-display); font-size: 28px; font-weight: 800; color: var(--accent); }
+.dash-stat-label { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 6px;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  padding: 8px 16px;
+  border: none;
+  background: none;
+  color: var(--text-secondary);
+  border-radius: var(--radius);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab-btn:hover { color: var(--text-primary); background: var(--bg-card); }
+
+.tab-btn.active {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.tab-badge {
+  background: var(--accent);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+.tab-actions { margin-bottom: 16px; }
+
+/* Form card */
+.form-card {
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.form-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* Owner vehicle list */
+.owner-vehicles-list { display: flex; flex-direction: column; gap: 12px; }
+
+.owner-vehicle-item {
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.owner-vehicle-icon { font-size: 40px; flex-shrink: 0; }
+
+.owner-vehicle-info { flex: 1; }
+
+.owner-vehicle-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.owner-vehicle-header h3 { font-size: 16px; font-weight: 700; }
+.owner-vehicle-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+
+.owner-vehicle-meta { font-size: 13px; color: var(--text-secondary); margin-bottom: 4px; }
+.owner-vehicle-price { font-size: 15px; font-weight: 700; color: var(--accent); }
+
+.owner-vehicle-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+
+/* Analytics */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.analytics-card {
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.analytics-card:hover { transform: translateY(-2px); }
+
+.analytics-icon { font-size: 32px; display: block; margin-bottom: 10px; }
+
+.analytics-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.analytics-label { font-size: 13px; color: var(--text-secondary); }
+
+.color-success { color: var(--success); }
+.color-warning { color: var(--warning); }
+.color-info { color: var(--info); }
+.color-secondary { color: var(--text-secondary); }
+
+/* Admin Table */
+.admin-table-wrapper {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.admin-table th {
+  padding: 14px 16px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.admin-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.admin-table tr:last-child td { border-bottom: none; }
+
+.admin-table tbody tr:hover { background: rgba(255,255,255,0.02); }
+
+/* Reuse .booking-item from Bookings.css */
+.bookings-list { display: flex; flex-direction: column; gap: 16px; }
+
+.booking-item {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: border-color 0.2s;
+}
+
+.booking-item:hover { border-color: var(--accent); }
+
+.booking-vehicle-icon { font-size: 48px; line-height: 1; flex-shrink: 0; }
+.booking-details { flex: 1; min-width: 0; }
+
+.booking-header-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+  flex-wrap: wrap;
+}
+
+.booking-vehicle-name { font-size: 18px; font-weight: 700; }
+.booking-vehicle-info { font-size: 13px; color: var(--text-secondary); margin-bottom: 10px; }
+
+.booking-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.booking-actions { display: flex; flex-direction: column; gap: 6px; flex-shrink: 0; }
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.chart-card {
+  padding: 24px;
+}
+
+.chart-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .charts-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .form-grid { grid-template-columns: 1fr; }
+}
