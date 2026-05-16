@@ -1,4 +1,4 @@
-$content = '{
+Set-Content -Path "C:\vehicle-rental\package.json" -Encoding utf8 -Value '{
   "name": "vehicle-rental-management-system",
   "version": "1.0.0",
   "description": "Vehicle Rental Management System",
@@ -26,4 +26,3 @@ $content = '{
     "node": "18.x"
   }
 }'
-$content | Out-File -FilePath "C:\vehicle-rental\package.json" -Encoding utf8
